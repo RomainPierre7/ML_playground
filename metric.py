@@ -1,17 +1,8 @@
-# Description: This file contains the implementation of the following metrics:
-# - Sum of Squares Error
-# - Mean Squared Error
-# - Root Mean Squared Error
-# - R-Squared
-# The metrics are used to evaluate the performance of a linear regression model.
-
-# Arguments:
-# - y: list of actual values
-# - y_pred: list of predicted values
+# Description: This file contains the implementation of some metrics for the linear regression.
 
 import numpy as np
 
-def sum_of_squares_error(y, y_pred):
+def squared_error(y, y_pred):
     return np.sum((y - y_pred) ** 2)
 
 def mean_squared_error(y, y_pred):
@@ -21,4 +12,4 @@ def root_mean_squared_error(y, y_pred):
     return np.sqrt(mean_squared_error(y, y_pred))
 
 def r_squared(y, y_pred):
-    return 1 - (sum_of_squares_error(y, y_pred) / sum_of_squares_error(y, np.mean(y)))
+    return 1 - (squared_error(y, y_pred) / squared_error(y, np.mean(y)))
