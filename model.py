@@ -7,6 +7,7 @@ def linear_model_solver(X, Y):
     XTY = np.transpose(X) @ Y
     return (np.linalg.inv(XTX) @ XTY).flatten()
 
+# ==================================================================================
 
 def polynomial_model(x, y, order):
     X = np.ones((len(x), 1))

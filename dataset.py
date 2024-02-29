@@ -11,6 +11,7 @@ def holdout(x, y, train_proportion):
     return x[train_indices], y[train_indices], x[test_indices], y[test_indices]
 
 # ==================================================================================
+
 def polynomial_example(order):
     size = 100
     X = np.random.uniform(-10, 10, size)
