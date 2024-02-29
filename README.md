@@ -16,11 +16,12 @@ python3 main.py
 
 ## Architecture
 The project is divided into the following files:
-- main.py: The main file that runs the project.
-- model.py: Contains the implementation of linear regression models using the least squares method and their corresponding evaluation methods. Contains also the solver using the least squares method.
-- metrics.py: Contains the implementation of several metrics to evaluate the performance of the linear regression models.
-- plot.py: Contains the implementation of the plot method to visualize the datasets and their corresponding linear regression models.
-- examples.py: Contains examples of datasets and their corresponding linear regression models.
+- ```main.py```: The main file that runs the project.
+- ```model.py```: Contains the implementation of linear regression models using the least squares method and their corresponding evaluation methods. Contains also the solver using the least squares method.
+- ```metrics.py```: Contains the implementation of several metrics to evaluate the performance of the linear regression models.
+- ```fit_optimizer.py```
+- ```plot.py```: Contains the implementation of the plot method to visualize the datasets and their corresponding linear regression models.
+- ```dataset.py```: Contains examples of datasets according to their linear regression models and splitting dataset functions.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
