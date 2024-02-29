@@ -1,9 +1,12 @@
+# Description: This file contains some sample models for the linear regression.
+
 import numpy as np
 
 def linear_model_solver(X, Y):
     XTX = np.transpose(X) @ X
     XTY = np.transpose(X) @ Y
     return (np.linalg.inv(XTX) @ XTY).flatten()
+
 
 def polynomial_model(x, y, order):
     X = np.ones((len(x), 1))
