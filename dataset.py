@@ -1,6 +1,7 @@
 # Description: This file contains dataset splitting and generation functions.
 
 import numpy as np
+import random as rd
 
 def holdout(x, y, train_proportion):
     n = len(x)
@@ -18,5 +19,5 @@ def polynomial_example(order):
     Y = np.zeros(size)
     for i in range(order + 1):
         noise = np.random.uniform(-10, 10, size)
-        Y += X ** i + noise
+        Y += rd.choice([-1, 1]) * X ** i + noise
     return X, Y
