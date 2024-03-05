@@ -3,7 +3,7 @@
 import numpy as np
 import random as rd
 
-def holdout(x, y, train_proportion):
+def holdout(x, y, train_proportion=0.7):
     n = len(x)
     indices = np.random.permutation(n)
     train_size = int(n * train_proportion)
@@ -13,7 +13,7 @@ def holdout(x, y, train_proportion):
 
 # ==================================================================================
 
-def polynomial_example(order):
+def polynomial_example(order=2):
     size = 100
     X = np.random.uniform(-10, 10, size)
     Y = np.zeros(size)

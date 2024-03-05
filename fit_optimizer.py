@@ -3,7 +3,7 @@
 import model
 import metric
 
-def best_polynomial_model(x_train, y_train, x_test, y_test, max_order):
+def best_polynomial_model(x_train, y_train, x_test, y_test, max_order=10):
     best_order = 0
     best_coefficients = None
     best_r_squared = float('-inf')
